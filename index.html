@@ -1,162 +1,259 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="./common.css" />
-    <link rel="stylesheet" type="text/css" href="./index.css" />
-  </head>
-  <body>
-    <div class="page flex-col justify-between">
-      <div class="text-wrapper_1 flex-col">
-        <span class="text_1"></span>
-      </div>
-      <div class="box_1 flex-col">
-        <div class="box_2 flex-col"></div>
-        <div class="block_1 flex-col">
-          <div class="box_4 flex-col"></div>
-          <span class="text_2">长按识别二维码&nbsp;关注公众号</span>
-        
-          <span class="text_3">点击&nbsp;防伪查询&nbsp;图文消息</span>
-          <img
-            class="label_3"
-            referrerpolicy="no-referrer"
-            src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPnge076ad27a1ee34bd984f1137a4e3e583d8a07ea54e5833032a2def9f502b6b33"
-          />
-          <span class="text_4">查询&nbsp;产品真伪&nbsp;信息</span>
-        </div>
-        <img
-          class="image_1"
-          referrerpolicy="no-referrer"
-          src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPnga2a604d8d47058be1dc2f82db27113b535761f7a3c14190902aff57d85e32d87"
-        />
+<html>
+<head>
+  <title>京东首页</title>
+  <style>
+    /* 顶部导航栏样式 */
+    .top-nav {
+      background-color: #333333;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    .top-nav a {
+      margin: 0 10px;
+      color: #333;
+      text-decoration: none;
+    }
+
+    /* 主要内容样式 */
+    .main-content {
+      background: white;
+      width: 75%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .image-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .product-item {
+      width: 23%;
+      height: auto;
+      background-color: white;
+      /* border: 1px solid #ddd; */
+      margin-bottom: 20px;
+      padding: 10px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    .product-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .product-item .title {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .product-item .price {
+      color: black;
+      background: linear-gradient(90deg, #FADE9E, #F5C66F);
+      font-weight: bold;
+      width: 100px;
+      padding: 4px;
+      margin: auto;
+    }
+  </style>
+</head>
+<body style="background: #F2F2F2;">
+ 
+  <div>
+    <img src="./static/head.jpg" alt="" srcset="">
+  </div>
+  <div class="main-content">
+    <div class="top-nav">
+      |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;｜ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 畅销单品&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;｜&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+    </div>
+    <div class="image-grid">
+      <div class="product-item">
+        <img src="./static/1.jpg" alt="商品 1">
+        <div class="title">CLARINS娇韵诗 <br>
+          双萃焕活修护精华露</div>
+        <div class="price">规格:50ml</div>
+      </div><div class="product-item">
+        <img src="./static/2.jpg" alt="商品 2">
+        <div class="title">CLARINS娇韵诗 <br>
+          光芒小瓷瓶透亮焕白淡斑精华</div>
+        <div class="price">规格:50ml</div>
+      </div><div class="product-item">
+        <img src="./static/3.jpg" alt="商品 3">
+        <div class="title">CLARINS娇韵诗 <br>
+          新版焕颜紧致精华水</div>
+        <div class="price">规格:200ml</div>
+      </div><div class="product-item">
+        <img src="./static/4.jpg" alt="商品 4">
+        <div class="title">CLARINS娇韵诗 <br>
+          焕颜紧致日霜</div>
+        <div class="price">规格:50ml</div>
+      </div><div class="product-item">
+        <img src="./static/5.jpg" alt="商品 5">
+        <div class="title">SHISEIDO资生堂 <br>
+          红腰子精华</div>
+        <div class="price">规格:50ml</div>
+      </div><div class="product-item">
+        <img src="./static/6.jpg" alt="商品 6">
+        <div class="title">SHISEIDO资生堂 <br>
+          悦薇珀翡小针管抗皱眼霜</div>
+        <div class="price">规格:50ml</div>
+      </div><div class="product-item">
+        <img src="./static/7.jpg" alt="商品 7">
+        <div class="title">SHISEIDO资生堂 <br>
+          安耐晒小金瓶防晒</div>
+        <div class="price">规格:50ml</div>
+      </div><div class="product-item">
+        <img src="./static/8.jpg" alt="商品 8">
+        <div class="title">SHISEIDO资生堂 <br>
+          蓝胖子防晒霜SPF50+</div>
+        <div class="price">规格:50ml</div>
       </div>
     </div>
-  </body>
-  <style>
-    .page {
-  background-color: rgba(249, 249, 249, 1);
-  position: relative;
-  width: 750px;
-  height: 1524px;
-  overflow: hidden;
-}
-
-.text-wrapper_1 {
-  height: 135px;
-  background: url(https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPngf0ed09dc01b179f28be432c68e3bbeafa8e54da5c928699b6bb8ab34e0e5fdcc)
-    0px 0px no-repeat;
-  background-size: 750px 136px;
-  width: 750px;
-}
-
-.text_1 {
-  width: 288px;
-  height: 45px;
-  overflow-wrap: break-word;
-  color: rgba(0, 0, 0, 1);
-  font-size: 32px;
-  font-family: PingFangHK-Semibold;
-  font-weight: 600;
-  text-align: right;
-  white-space: nowrap;
-  line-height: 45px;
-  margin: 58px 0 0 236px;
-}
-
-.box_1 {
-  background-color: rgba(242, 16, 48, 1);
-  position: relative;
-  width: 750px;
-  height: 1389px;
-}
-
-.box_2 {
-  background-image: url(https://lanhu-dds-backend.oss-cn-beijing.aliyuncs.com/merge_image/imgs/c9e5df2f3aaa425e85d2d4d15e8c0b6a_mergeImage.png);
-  width: 750px;
-  height: 710px;
-}
-
-.block_1 {
-  width: 690px;
-  height: 588px;
-  background: url(https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng4cad1e6fb3b36caff4d9a875d24aa93603f167e439d494aa598e9124fca89493)
-    100% no-repeat;
-  background-size: 100% 100%;
-  margin: 0 0 91px 30px;
-}
-
-.box_4 {
-  box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.2);
-  border-radius: 14px;
-  background-image: url(https://lanhu-dds-backend.oss-cn-beijing.aliyuncs.com/merge_image/imgs/703a5f47c3f740599292079a557ef253_mergeImage.png);
-  width: 225px;
-  height: 225px;
-  margin: 48px 0 0 232px;
-}
-
-.text_2 {
-  width: 366px;
-  height: 33px;
-  overflow-wrap: break-word;
-  color: rgba(72, 34, 25, 1);
-  font-size: 28px;
-  font-family: PingFangSC-Regular;
-  font-weight: NaN;
-  text-align: right;
-  white-space: nowrap;
-  line-height: 40px;
-  margin: 37px 0 0 162px;
-}
-
-.label_1 {
-  width: 37px;
-  height: 37px;
-  margin: 17px 0 0 327px;
-}
-
-.text_3 {
-  width: 350px;
-  height: 33px;
-  overflow-wrap: break-word;
-  color: rgba(72, 34, 25, 1);
-  font-size: 28px;
-  font-family: PingFangSC-Regular;
-  font-weight: NaN;
-  text-align: right;
-  white-space: nowrap;
-  line-height: 40px;
-  margin: 8px 0 0 170px;
-}
-
-.label_3 {
-  width: 37px;
-  height: 37px;
-  margin: 19px 0 0 327px;
-}
-
-.text_4 {
-  width: 314px;
-  height: 33px;
-  overflow-wrap: break-word;
-  color: rgba(72, 34, 25, 1);
-  font-size: 28px;
-  font-family: PingFangSC-Regular;
-  font-weight: NaN;
-  text-align: right;
-  white-space: nowrap;
-  line-height: 40px;
-  margin: 8px 0 53px 188px;
-}
-
-.image_1 {
-  position: absolute;
-  left: 508px;
-  top: 600px;
-  width: 242px;
-  height: 190px;
-}
-
-  </style>
+    <div class="top-nav">
+      |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;｜ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 畅销单品&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;｜&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+    </div>
+    <div class="image-grid">
+      <div class="product-item">
+        <img src="./static/9.jpg" alt="商品 9">
+        <div class="title">NARS纳斯 <br>
+          控油大白饼</div>
+        <div class="price">规格:50ml</div>
+      </div><div class="product-item">
+        <img src="./static/10.jpg" alt="商品 10">
+        <div class="title">NARS纳斯 <br>
+          腮红#ORGASM</div>
+        <div class="price">规格:50ml</div>
+      </div><div class="product-item">
+        <img src="./static/11.jpg" alt="商品 11">
+        <div class="title">NARS纳斯 <br>
+          遮瑕霜</div>
+        <div class="price">规格:50ml</div>
+      </div><div class="product-item">
+        <img src="./static/12.jpg" alt="商品 12">
+        <div class="title">NARS纳斯 <br>
+          哑光遮瑕膏</div>
+        <div class="price">规格:50ml</div>
+      </div><div class="product-item">
+        <img src="./static/13.jpg" alt="商品 13">
+        <div class="title">GUERLAIN娇兰 <br>
+          帝皇蜂姿修护复原蜜</div>
+        <div class="price">规格:50ml</div>
+      </div><div class="product-item">
+        <img src="./static/14.jpg" alt="商品 14">
+        <div class="title">GUERLAIN娇兰<br>
+          金钻粉底液</div>
+        <div class="price">规格:50ml</div>
+      </div><div class="product-item">
+        <img src="./static/15.jpg" alt="商品 15">
+        <div class="title">GUERLAIN娇兰 <br>
+          帝皇蜂姿双管精华液</div>
+        <div class="price">规格:50ml</div>
+      </div><div class="product-item">
+        <img src="./static/16.jpg" alt="商品 16">
+        <div class="title">GUERLAIN娇兰 <br>
+          御廷兰花卓能焕活精粹水</div>
+        <div class="price">规格:50ml</div>
+      </div>
+    </div>
+    <div class="top-nav">
+      |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;｜ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 畅销单品&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;｜&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+    </div>
+    <div class="image-grid">
+      <div class="product-item">
+        <img src="./static/17.jpg" alt="商品 17">
+        <div class="title">LANCOME兰蔻 <br>
+          菁纯臻颜精华粉底液</div>
+        <div class="price">规格:50ml</div>
+      </div><div class="product-item">
+        <img src="./static/18.jpg" alt="商品 18">
+        <div class="title">LANCOME兰蔻 <br>
+          小白管UV防晒乳</div>
+        <div class="price">规格:50ml</div>
+      </div><div class="product-item">
+        <img src="./static/19.jpg" alt="商品 19">
+        <div class="title">LANCOME兰蔻 <br>
+          菁纯眼霜对装</div>
+        <div class="price">规格:50ml</div>
+      </div><div class="product-item">
+        <img src="./static/20.jpg" alt="商品 20">
+        <div class="title">LANCOME兰蔻 <br>
+          小黑瓶肌底精华液</div>
+        <div class="price">规格:50ml</div>
+      </div><div class="product-item">
+        <img src="./static/21.jpg" alt="商品 21">
+        <div class="title">ESTEE LAUDER雅诗兰黛 <br>
+          小棕瓶抗蓝光眼霜</div>
+        <div class="price">规格:50ml</div>
+      </div><div class="product-item">
+        <img src="./static/22.jpg" alt="商品 22">
+        <div class="title">ESTEE LAUDER雅诗兰黛 <br>
+          第七代小棕瓶精华液对装</div>
+        <div class="price">规格:50ml</div>
+      </div><div class="product-item">
+        <img src="./static/23.jpg" alt="商品 23">
+        <div class="title">ESTEE LAUDER雅诗兰黛 <br>
+          DW持妆粉底液</div>
+        <div class="price">规格:50ml</div>
+      </div><div class="product-item">
+        <img src="./static/24.jpg" alt="商品 24">
+        <div class="title">ESTEE LAUDER雅诗兰黛 <br>
+          小棕瓶微精华露原生液</div>
+        <div class="price">规格:50ml</div>
+      </div>
+    </div>
+    <div class="top-nav">
+      |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;｜ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 畅销单品&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;｜&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+    </div>
+    <div class="image-grid">
+      <div class="product-item">
+        <img src="./static/25.jpg" alt="商品 25">
+        <div class="title">CHANEL香奈儿 <br>
+          嘉柏丽尔天性女性香水</div>
+        <div class="price">规格:50ml</div>
+      </div><div class="product-item">
+        <img src="./static/26.jpg" alt="商品 26">
+        <div class="title">CHANEL香奈儿 <br>
+          山茶花洁面</div>
+        <div class="price">规格:50ml</div>
+      </div><div class="product-item">
+        <img src="./static/27.jpg" alt="商品 27">
+        <div class="title">CHANEL香奈儿 <br>
+          丝绒炫亮唇膏</div>
+        <div class="price">规格:50ml</div>
+      </div><div class="product-item">
+        <img src="./static/28.jpg" alt="商品 28">
+        <div class="title">CHANEL香奈儿 <br>
+          蔚蓝男士浓香水</div>
+        <div class="price">规格:50ml</div>
+      </div><div class="product-item">
+        <img src="./static/29.jpg" alt="商品 29">
+        <div class="title">LA MER海蓝之谜 <br>
+          修护精粹液</div>
+        <div class="price">规格:50ml</div>
+      </div><div class="product-item">
+        <img src="./static/30.jpg" alt="商品 30">
+        <div class="title">LAMER海蓝之谜 <br>
+          经典精华面霜</div>
+        <div class="price">规格:50ml</div>
+      </div><div class="product-item">
+        <img src="./static/31.jpg" alt="商品 31">
+        <div class="title">CPB肌肤之钥 <br>
+          光缎粉霜隔离霜</div>
+        <div class="price">规格:50ml</div>
+      </div><div class="product-item">
+        <img src="./static/32.jpg" alt="商品 32">
+        <div class="title">CPB肌肤之钥 <br>
+          净彩泡沫洁面膏</div>
+        <div class="price">规格:50ml</div>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
